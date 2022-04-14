@@ -2,8 +2,8 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getEmployment(applicationId: string) {
-    if (applicationId !== 'Employment_12345678') {
+  getEmployment(id: string) {
+    if (id !== 'Employment_12345678') {
       throw new HttpException(
         {
           statusCode: HttpStatus.BAD_REQUEST,

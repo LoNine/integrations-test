@@ -5,8 +5,8 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('/employment')
-  async getEmployment(@Query() query: { employmentId: string }) {
-    return this.appService.getEmployment(query.employmentId);
+  @Get('/employments')
+  async getEmployment(@Query() query: { id: string }) {
+    return this.appService.getEmployment(query.id);
   }
 }
