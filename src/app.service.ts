@@ -14,7 +14,7 @@ export class AppService {
     }
 
     const result = {
-      employmentOnProbration: 'No',
+      employmentOnProbration: false,
       employmentStarDate: '01/01/2018',
       employmentOccupation: 'Nurse',
       employmentEndDate: '02/02/2022',
